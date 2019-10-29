@@ -1,0 +1,16 @@
+version: "3.7"
+services:
+  env-viz:
+    image: ntdtfr/env-visualizer
+    configs:
+      - source: env.conf
+        target: /opt/conf/env.conf
+    ports:
+      - 5000:5000
+    deploy:
+      mode: replicated
+      replicas: 1
+configs:
+  env.conf:
+    # file: ./config/test.env
+    external: true

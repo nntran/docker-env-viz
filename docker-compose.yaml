@@ -1,0 +1,9 @@
+version: "3.7"
+services:
+  env-viz:
+    image: ntdtfr/env-visualizer
+    build: .
+    ports:
+      - 5000:5000
+    volumes:
+      - ./config/test.env:/opt/conf/env.conf
