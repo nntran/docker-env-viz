@@ -1,4 +1,4 @@
-# env-viz-docker
+# docker-env-viz
 
 Environment variables visualizer
 
